@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+@import './abstract/variables';
+
+@import './pages/home';
+@import './pages/logIn';
+@import './pages/registration';
+
+@import './components/buttons/SimpleButton';
+@import './components/buttons/shop-button';
+@import './components/buttons/dropdown';
+@import './components/Finder/Finder';
+@import './components/Slider/slider';
+@import './components/SaleCard/salecard';
+@import './components/Input/input.scss';
+@import './components//buttons/logIn-button';
+@import './components//Filter/filter';
+@import './components//Games//games';
+@import './components/Link/link';
+@import './components/buttons/pay_button';

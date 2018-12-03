@@ -1,0 +1,49 @@
+.dropdown {
+    height: 3rem;
+    width: 6rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    
+
+    &-text{
+        color: white;
+        font-weight: 200;
+        display: flex;
+    }
+
+    &-content{
+        transform: translateY(3rem);
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 16rem;
+        min-height: 7rem;
+        box-shadow: 0px 8px 16px 0px rgba(black,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+
+        &__link{
+            color: black;
+            text-decoration: none;
+            &-pay{
+                background-color: red;
+            }
+        }
+
+        &__icon{
+            height: 1rem;
+            width: 1rem;
+            fill: black;
+            margin-right: .3rem;
+        }
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}

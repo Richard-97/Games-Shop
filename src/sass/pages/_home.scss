@@ -1,0 +1,116 @@
+.container{
+    height: 100rem;
+    width: 100%;
+
+    &-header{
+        height: auto;
+        width: inherit;
+
+        background-color: rgba(black, .7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-intro{
+        height: 25rem;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+
+        &-text{
+            height: 25rem;
+            width: 40%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__primary{
+                color: black;
+                font-size: 3.5rem;
+                font-weight: 800;
+                margin: 0;
+                animation: moveInLeft 2s ease-out .75s;
+            }
+            &__secondary{
+                color: black;
+                font-size: 1.5rem;
+                font-weight: 200;
+            }
+        }
+        &__icon{
+            height: 2rem;
+            width: 2rem;
+        }
+        &__icons{
+            width: 20rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &-bestsellers{
+        height: 40rem;
+        width: auto;
+        margin: 2.5rem 4rem;
+
+        &-intro{
+            height: 10rem;
+            width: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+
+            &__text{
+                width: fit-content;
+                font-size: 2rem;
+                font-weight: 500;
+                color: white;
+                margin: 1.5rem;
+            }
+            &-secondary{
+                font-size: 1rem;
+                font-weight: 400;
+                color: white;
+                margin: 1.5rem;
+            }
+            &-tertiary{
+                font-size: 1rem;
+                font-weight: 400;
+                color: white;
+                margin: 1.5rem;
+                border: .08rem solid white;
+                border-radius: 1rem;
+                width: fit-content;
+                cursor: pointer;
+
+                &:hover{
+                    background:  white;
+                    color: black;
+                }
+            }
+        }
+        &__gamescards{
+            height: 24rem;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+    80%{
+        transform: translateX(1rem)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

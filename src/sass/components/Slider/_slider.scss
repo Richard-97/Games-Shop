@@ -1,0 +1,43 @@
+.slider{
+    width: 50rem;
+    height: 25rem;
+    
+
+    &__img{
+        height: 100%;
+        width: 100%;
+        background: url('../img/assassins.jpg');
+        background-size: cover;
+        box-shadow: 0 0 6rem 3rem white inset;
+
+        animation: slide 40s infinite;
+    }
+}
+@keyframes slide {
+    20%{
+        background: url('../img/cod.jpg');
+        background-size: cover;
+        //background-position: center;
+        box-shadow: 0 0 6rem 3rem white inset;
+    }
+    40%{
+        background: url('../img/fifa19.jpg');
+        background-size: cover;
+        box-shadow: 0 0 6rem 3rem white inset;
+    }
+    60%{
+        background: url('../img/gta.jpg');
+        background-size: cover;
+        box-shadow: 0 0 6rem 3rem white inset;
+    }
+    80%{
+        background: url('../img/justcause.jpg');
+        background-size: cover;
+        box-shadow: 0 0 6rem 3rem white inset;
+    }
+    100%{
+        background: url('../img/assassins.jpg');
+        background-size: cover;
+        box-shadow: 0 0 6rem 3rem white inset;
+    }
+}
