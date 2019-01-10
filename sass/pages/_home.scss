@@ -1,0 +1,117 @@
+
+    .container-header{
+        height: auto;
+        width: inherit;
+
+        background-color: #e5e5e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .title{
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: top;
+        background-image: linear-gradient(to right bottom, rgba(gray, .4), rgba(#22f4f0, .4)), url(.././img/main/mainimg.svg);
+        clip-path: polygon(54% 0, 100% 0, 100% 81%, 50% 100%, 0 82%, 0 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-textarea{
+            height: fit-content;
+            width: fit-content;
+            padding: 1.5rem;
+            background-color: rgba(white, .15);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        &-text1{
+            font-size: 6rem;
+            font-weight: 650;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: .3rem .4rem .5rem black;
+            margin: 0;
+        }
+        &-text2{
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: .3rem .4rem .5rem black;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+    }
+    .container-bestsellers{
+        height: 40rem;
+        width: auto;
+        margin: 2.5rem 4rem;
+
+        &-intro{
+            height: 10rem;
+            width: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+
+            &__text{
+                width: fit-content;
+                font-size: 2rem;
+                font-weight: 500;
+                color: white;
+                margin: 1.5rem;
+            }
+            &-secondary{
+                font-size: 1rem;
+                font-weight: 400;
+                color: white;
+                margin: 1.5rem;
+            }
+            &-tertiary{
+                font-size: 1rem;
+                font-weight: 400;
+                color: white;
+                margin: 1.5rem;
+                border: .08rem solid white;
+                border-radius: 1rem;
+                width: fit-content;
+                cursor: pointer;
+
+                &:hover{
+                    background:  white;
+                    color: black;
+                }
+            }
+        }
+        &__gamescards{
+            height: 24rem;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+    80%{
+        transform: translateX(1rem)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

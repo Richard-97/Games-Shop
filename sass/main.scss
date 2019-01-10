@@ -1,0 +1,28 @@
+
+@import './abstract/mixins';
+@import './abstract/variables';
+
+@import './base/base';
+
+@import './pages/home';
+@import './pages/logIn';
+@import './pages/registration'; 
+@import './pages/orderHistory';
+@import './pages/games';
+@import './pages/gamesPS4';
+
+@import './components/buttons/SimpleButton';
+@import './components/buttons/shop-button';
+@import './components/buttons/dropdown';
+@import './components/Finder/Finder';
+@import './components/Slider/slider';
+@import './components/SaleCard/salecard';
+@import './components/Input/input.scss';
+@import './components//buttons/logIn-button';
+@import './components//Filter/filter';
+@import './components//Games//games';
+@import './components/Link/link';
+@import './components/buttons/pay_button';
+@import './components/Tables/pay-tables';
+@import './components/Header/header';
+

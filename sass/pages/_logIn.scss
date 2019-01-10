@@ -1,0 +1,83 @@
+.container-logIn{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__registration{
+        margin: 0;
+        color: white;
+        height: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover{
+            color: red;
+            border-bottom: .1rem solid white;
+            width: fit-content;
+        }
+    }
+    &__forgottenPassword{
+        margin: 0;
+        color: white;
+        font-weight: 300;
+        cursor: pointer;
+        &:hover{
+            color: red;
+            border-bottom: .1rem solid white;
+            width: fit-content;
+        }
+    }
+
+    &__labelsinputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-box{
+        margin-top: 10rem;
+        height: 25rem;
+        width: 25rem;
+        border-radius: 2rem;
+        background-color: rgba(black, .7);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        position: relative;
+
+        &__inputs{
+            height: 10rem;
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        &__icon{
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            background-color: rgba(red, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: -2.8rem;
+            margin-bottom: 1rem;
+
+            &__img{
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+    }
+}

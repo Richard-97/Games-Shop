@@ -1,0 +1,638 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",sans-serif;
+  font-weight: 200;
+  box-sizing: border-box;
+  margin: 0; }
+
+.container {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.container-header {
+  height: auto;
+  width: inherit;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.title {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.4), rgba(34, 244, 240, 0.4)), url(.././img/main/mainimg.svg);
+  clip-path: polygon(54% 0, 100% 0, 100% 81%, 50% 100%, 0 82%, 0 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .title-textarea {
+    height: fit-content;
+    width: fit-content;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .title__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .title-text1 {
+    font-size: 6rem;
+    font-weight: 650;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: .3rem .4rem .5rem black;
+    margin: 0; }
+  .title-text2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: .3rem .4rem .5rem black;
+    margin-top: 1.5rem;
+    margin-bottom: 0; }
+
+.container-bestsellers {
+  height: 40rem;
+  width: auto;
+  margin: 2.5rem 4rem; }
+  .container-bestsellers-intro {
+    height: 10rem;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .container-bestsellers-intro__text {
+      width: fit-content;
+      font-size: 2rem;
+      font-weight: 500;
+      color: white;
+      margin: 1.5rem; }
+    .container-bestsellers-intro-secondary {
+      font-size: 1rem;
+      font-weight: 400;
+      color: white;
+      margin: 1.5rem; }
+    .container-bestsellers-intro-tertiary {
+      font-size: 1rem;
+      font-weight: 400;
+      color: white;
+      margin: 1.5rem;
+      border: .08rem solid white;
+      border-radius: 1rem;
+      width: fit-content;
+      cursor: pointer; }
+      .container-bestsellers-intro-tertiary:hover {
+        background: white;
+        color: black; }
+  .container-bestsellers__gamescards {
+    height: 24rem;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.container-logIn {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container-logIn__registration {
+    margin: 0;
+    color: white;
+    height: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    text-decoration: none; }
+    .container-logIn__registration:hover {
+      color: red;
+      border-bottom: .1rem solid white;
+      width: fit-content; }
+  .container-logIn__forgottenPassword {
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    cursor: pointer; }
+    .container-logIn__forgottenPassword:hover {
+      color: red;
+      border-bottom: .1rem solid white;
+      width: fit-content; }
+  .container-logIn__labelsinputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .container-logIn-box {
+    margin-top: 10rem;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; }
+    .container-logIn-box__inputs {
+      height: 10rem;
+      width: 15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 1rem; }
+    .container-logIn-box__icon {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -2.8rem;
+      margin-bottom: 1rem; }
+      .container-logIn-box__icon__img {
+        height: 3rem;
+        width: 3rem; }
+
+.container-registration {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container-registration-box {
+    margin-top: 10rem;
+    height: 45rem;
+    width: 25rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; }
+    .container-registration-box__inputs {
+      height: 30rem;
+      margin-top: 0rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+  .container-registration__fillFields {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400; }
+
+.container-orderHistory {
+  height: 100%;
+  width: 100%; }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 40rem;
+  width: 30rem;
+  margin-top: 10rem;
+  cursor: pointer; }
+  .card-side {
+    height: inherit;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .card-side-front {
+      background-color: white; }
+    .card-side-back {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      transform: rotateY(180deg);
+      background-color: rgba(0, 0, 0, 0.5); }
+      .card-side-back__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+  .card:hover .card-side-front {
+    transform: rotateY(-180deg); }
+  .card:hover .card-side-back {
+    transform: rotateY(0); }
+  .card-xbox {
+    height: 5rem;
+    width: auto; }
+  .card-ps {
+    height: 5rem;
+    width: auto; }
+  .card-button {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 3rem;
+    color: black;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 3;
+    position: absolute;
+    top: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .card-button:hover {
+      transform: scale(1.1); }
+
+.container-PS4 {
+  height: 100%;
+  width: 100%;
+  margin-top: 3rem; }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  text-decoration: none; }
+  .button__home {
+    height: 2rem;
+    width: 4rem;
+    border-radius: 2rem;
+    background-color: #389bff;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .button__home:hover {
+      transform: scale(1.015);
+      box-shadow: 0 10px 6px -6px #777;
+      background-color: transparent;
+      border: .1rem solid #389bff; }
+  .button__perform {
+    color: purple;
+    font-size: 1rem;
+    font-weight: 520; }
+    .button__perform:focus {
+      outline: none; }
+  .button__logout {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    text-decoration: none;
+    cursor: pointer; }
+
+.shop-button {
+  height: 1.5rem;
+  width: 3.5rem;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: row; }
+  .shop-button__icon {
+    height: 1.5rem;
+    width: 1.5rem; }
+
+.dropdown {
+  height: 100%;
+  width: fit-content;
+  position: relative;
+  cursor: pointer;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .dropdown-text {
+    color: #22f4f0;
+    font-weight: 200;
+    display: flex;
+    margin: 0; }
+  .dropdown-content {
+    transform: translateY(3rem);
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    min-width: 16rem;
+    min-height: 7rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    position: absolute;
+    top: 0;
+    z-index: 3; }
+    .dropdown-content__link {
+      color: red;
+      text-decoration: none; }
+      .dropdown-content__link-pay {
+        background-color: red; }
+    .dropdown-content__icon {
+      height: 1rem;
+      width: 1rem;
+      fill: black;
+      margin-right: .3rem; }
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column; }
+
+.Main-Finder {
+  width: 15rem;
+  height: 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  padding: .2rem .5rem;
+  outline: none;
+  color: purple; }
+  .Main-Finder:focus {
+    box-shadow: 0 10px 6px -6px #777;
+    border: .1rem solid #389bff; }
+  .Main-Finder:hover {
+    box-shadow: 0 10px 6px -6px #777;
+    border: .1rem solid #389bff; }
+
+.slider {
+  width: 50rem;
+  height: 25rem; }
+  .slider__img {
+    height: 100%;
+    width: 100%;
+    background: url("../img/assassins.jpg");
+    background-size: cover;
+    box-shadow: 0 0 6rem 3rem white inset;
+    animation: slide 40s infinite; }
+
+@keyframes slide {
+  20% {
+    background: url("../img/cod.jpg");
+    background-size: cover;
+    box-shadow: 0 0 6rem 3rem white inset; }
+  40% {
+    background: url("../img/fifa19.jpg");
+    background-size: cover;
+    box-shadow: 0 0 6rem 3rem white inset; }
+  60% {
+    background: url("../img/gta.jpg");
+    background-size: cover;
+    box-shadow: 0 0 6rem 3rem white inset; }
+  80% {
+    background: url("../img/justcause.jpg");
+    background-size: cover;
+    box-shadow: 0 0 6rem 3rem white inset; }
+  100% {
+    background: url("../img/assassins.jpg");
+    background-size: cover;
+    box-shadow: 0 0 6rem 3rem white inset; } }
+
+.salecard {
+  height: 22rem;
+  width: 15rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 1rem; }
+  .salecard:hover {
+    transform: scale(1.05); }
+  .salecard-console {
+    height: 2rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .salecard-console__PS4 {
+      color: white; }
+    .salecard-console__XBOX {
+      color: white; }
+    .salecard-console__PS3 {
+      color: white; }
+  .salecard-imgplace {
+    height: 10rem;
+    width: 100%; }
+    .salecard-imgplace__img {
+      height: 100%;
+      width: 100%; }
+  .salecard-gamename {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.2rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5); }
+  .salecard-price {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 2rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5); }
+  .salecard-button {
+    height: 3rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .salecard-button__btn {
+      width: 4.5rem;
+      height: 1.5rem;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 400;
+      background-origin: padding-box;
+      border: .05rem solid white;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .salecard-button__btn__text {
+        font-size: 1rem;
+        margin: 0; }
+      .salecard-button__btn:hover {
+        color: rgba(0, 0, 0, 0.5);
+        background-color: white; }
+
+.input {
+  height: 2rem;
+  width: 13rem;
+  border: none;
+  border-radius: .5rem;
+  outline: none; }
+  .input:focus {
+    border-bottom: .2rem solid red; }
+  .input:hover {
+    transform: scale(1.05); }
+
+.logIn-button {
+  height: 2.5rem;
+  width: 7rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .logIn-button:hover {
+    color: red;
+    background-color: white; }
+  .logIn-button:active {
+    transform: translateY(0.2rem); }
+
+.filter {
+  margin: 1rem 5rem;
+  height: 3rem;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: 'Libre Baskerville', serif; }
+  .filter-classes__notActive {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 7rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .filter-classes__notActive:hover {
+      color: black;
+      background-color: white; }
+    .filter-classes__notActive:active {
+      transform: translateY(0.1rem); }
+  .filter-classes__Active {
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 7rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    border: 0.1rem solid rgba(255, 0, 0, 0.7);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .filter-classes__Active:active {
+      transform: translateY(0.1rem); }
+
+.games {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.link {
+  text-decoration: none;
+  color: black; }
+
+.pay_button {
+  height: 2rem;
+  width: 5rem;
+  background-color: red;
+  border-radius: 2rem; }
+
+.container-login {
+  width: 100%;
+  height: auto; }
+
+.header {
+  text-align: right;
+  height: 4rem;
+  width: 100%;
+  line-height: 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+  background-position: 25% 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  border-bottom: rgba(172, 172, 172, 0.7);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 2; }
+  @media only screen and (max-width: 50rem) {
+    .header {
+      justify-content: flex-start; } }
+  .header label {
+    width: 3rem;
+    float: right;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 2.6rem;
+    line-height: 7rem;
+    display: none; }
+  .header #toogle {
+    display: none; }
+  @media only screen and (max-width: 50rem) {
+    .header #toogle:checked + .header-menu {
+      display: inline-flex; } }
+  @media only screen and (max-width: 50rem) {
+    .header label {
+      display: block;
+      cursor: pointer; } }
+  .header-menu {
+    height: fit-content;
+    width: 150rem;
+    display: flex; }
+    @media only screen and (max-width: 50rem) {
+      .header-menu {
+        display: none; } }
+    .header-menu a {
+      text-decoration: none;
+      color: #22f4f0;
+      margin: 0 1rem;
+      line-height: 2rem;
+      padding: 0.05rem; }
+      @media only screen and (max-width: 50rem) {
+        .header-menu a {
+          display: block;
+          border-bottom: .1rem solid #acacac; } }
+      .header-menu a:hover {
+        border-right: 0.05rem solid rgba(255, 255, 255, 0.4);
+        border-left: 0.05rem solid rgba(255, 255, 255, 0.4);
+        color: white; }
